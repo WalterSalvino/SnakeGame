@@ -53,10 +53,10 @@ function desenharJogo(){
         appleY = Math.floor(Math.random() * tamanhoTela);
     }
 
-    ctx.fillStyle = "black";// cor do bg
+    ctx.fillStyle = "#F26627";// cor do bg
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-    ctx.fillStyle = "orange";//cor da snake
+    ctx.fillStyle = "#325D79";//cor da snake
     for (let i = 0; i < caminhoCobra.length; i++){
         ctx.fillRect(
             caminhoCobra[i].x * tamanhoCaminho,
@@ -69,7 +69,7 @@ function desenharJogo(){
         }
     }
 
-    ctx.fillStyle = "red"; //cor da maça
+    ctx.fillStyle = "#EFEEEE"; //cor da maça
     ctx.fillRect(appleX * tamanhoCaminho, appleY * tamanhoCaminho, tamanhoCaminho, tamanhoCaminho);
 
     caminhoCobra.push({
